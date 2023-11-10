@@ -1,0 +1,841 @@
+@font-face {
+  font-family: 'Jamesphilip Light';
+  src: url('../fonts/Sailec-Light/Sailec\ Light.ttf');
+}
+@font-face {
+  font-family: 'Jamesphilip Bold';
+  src: url('../fonts/Fonts/sofiapro-light.otf');
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  color: #121212 !important;
+}
+
+html, body{
+  background-image: linear-gradient(to right, #fff, #fff, #fff) !important;
+  height: 100vh;
+}
+
+
+
+#img{
+  justify-content: right !important;
+  position: absolute;
+  right: 6rem;
+  top: 10rem !important;
+}
+
+#img3{
+  justify-content: right !important;
+  position: absolute;
+  right: 0;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  margin-left: 13rem;
+} 
+
+.text h1{
+  font-size: 6rem;
+  font-family: 'Jamesphilip Bold', sans-serif;
+  font-weight: 800;
+  color: #2fada2 !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important; 
+  background-image: linear-gradient(to right, #1d8a81,#1d8a81) !important;
+}
+
+.text h6{
+  font-size: 19px;
+  font-family: "Jamesphilip Light",Sans-serif;
+  font-weight: 500;
+
+}
+
+.text ul{
+  margin: 0;
+  padding: 0;
+}
+
+.text ul li{
+  list-style: none;
+  position: relative;
+}
+
+.about-homepages{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.about-home{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 10rem;
+  margin-left: 13rem;
+  font-family: 'Jamesphilip Light', sans-serif;
+} 
+
+.about-text h1{
+  font-size: 5rem;
+  font-family: 'Jamesphilip Light', sans-serif;
+  font-weight: 700;
+  color: #121212 !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important; 
+  /* background-image: linear-gradient(to right, #5a4be2,#b41313) !important; */
+  background-image: linear-gradient(to right, #1d8a81,#1d8a81) !important;
+}
+
+.about-text p{
+  text-align: justify;
+}
+
+.faq-home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+.faq-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+} 
+
+.faq-title h1{
+  font-size: 5rem;
+  font-family: 'Jamesphilip Bold', sans-serif;
+  font-weight: 700;
+  color: #121212 !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important; 
+  /* background-image: linear-gradient(to right, #5a4be2,#b41313) !important; */
+  background-image: linear-gradient(to right, #1d8a81,#1d8a81) !important;
+}
+
+.faq-title .accordion{
+  width: 100%;
+}
+
+.faq-title .accordion-item{
+  margin: 2rem 20rem;
+  width: 100%;
+}
+
+.faq-title .accordion-button{
+  font-family: 'Jamesphilip Bold', sans-serif;
+  font-size: 22px;
+  padding-right: 1rem;
+  font-weight: 500;
+  width: 70vw !important; 
+}
+
+.faq-title .accordion-button:hover{
+  text-decoration: underline;
+}
+
+.faq-title .accordion-body{
+  font-size: 16px;
+  font-family: 'Jamesphilip Bold', sans-serif;
+  width: 70vw !important; 
+}
+
+.tc-home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+.tc-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.tc-title h1{
+  font-size: 4rem;
+  font-family: 'Jamesphilip Bold', sans-serif;
+  font-weight: 700;
+  color: #121212 !important;
+  background-clip: text !important;
+  text-align: center !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important; 
+  /* background-image: linear-gradient(to right, #5a4be2,#b41313) !important; */
+  background-image: linear-gradient(to right, #1d8a81,#1d8a81) !important;
+}
+
+.tc-title p{
+  font-size: 15px;
+  margin: 0 12rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  text-indent: 3rem;
+}
+
+.contact-homepages{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.contact-home{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 10rem;
+  margin-left: 13rem;
+  font-family: 'Roboto', sans-serif;
+} 
+
+.contact-text h1{
+  font-size: 5rem;
+  font-family: 'Jamesphilip Bold', sans-serif;
+  font-weight: 700;
+  color: #121212 !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important; 
+  /* background-image: linear-gradient(to right, #5a4be2,#b41313) !important; */
+  background-image: linear-gradient(to right, #1d8a81,#1d8a81) !important;
+}
+
+.contact-form{
+  width: 100%;
+  margin-right: 5rem;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-form h2{
+  display: none;
+  font-size: 3rem;
+    font-family: 'Jamesphilip Bold', sans-serif;
+    font-weight: 700;
+    color: #121212 !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important; 
+    /* background-image: linear-gradient(to right, #5a4be2,#b41313) !important; */
+    background-image: linear-gradient(to right, #1d8a81,#1d8a81) !important;
+}
+
+.contact-form .form-control{
+  border: 1px solid #000;
+  padding: 20px;
+  box-shadow: none !important;
+}
+
+.contact-form .form-control:focus{
+  outline: none !important;
+}
+
+.contact-form .btn{
+  border: 1px solid #000;
+  padding: 15px 40px;
+  box-shadow: none;
+}
+
+.contact-form .btn:hover{
+  background: #2fada2;
+  color: #fff !important;
+  border: 1px solid #2fada2;
+  transition: .4s ease-in-out;
+}
+
+#home-button{
+  background: none;
+  border: 1px solid #000 !important;
+  border-radius: 20px 2px;
+  padding: 16px 33px;
+  width: 10rem;
+  transition: .6s ease-in-out;
+  cursor: pointer;
+  border-color: #fff;
+  font-family: 'Jamesphilip Bold', sans-serif !important;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+ }
+
+ #home-button:hover{
+  background: #2fada2;
+  border: 1px solid #0c0a0a !important;
+  color: #fff !important;
+  transition: .6s ease-in-out;
+}
+
+#button{
+  background: none;
+  border: 1px solid #000 !important;
+  border-radius: 20px 2px;
+  padding: 1rem;
+  width: 10rem;
+  transition: .6s ease-in-out;
+  cursor: pointer;
+  font-family: 'poppins', sans-serif;
+  font-size: 13px;
+}
+
+#button:hover{
+  background: #2fada2;
+  border: 1px solid #2fada2 !important;
+  color: #fff !important;
+  transition: .6s ease-in-out;
+}
+
+.homepages{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.home{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nextPage{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 100vh;
+}
+
+.about-page{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-page{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 100vh;
+}
+
+.contact-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.description h3{
+  font-family: 'Jamesphilip Light', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: darkgray;
+}
+
+.description h1{
+  font-family: 'Jamesphilip Light', sans-serif;
+  font-size: 58px;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  color: #2fada2 !important;
+}
+
+.description p{
+  font-family: 'Jamesphilip Light',Sans-serif;
+  font-size: 17px;
+  margin-right: 10rem;
+  text-indent: 2rem;
+  font-weight: 500;
+}
+
+.contact_info{
+  position: relative;
+  left: 0rem;
+  text-align: justify;
+}
+
+.contact_info h1{
+  font-family: "Jamesphilip Light",Sans-serif;
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 1em;
+  color: #2fada2 !important;
+}
+
+.contact_info h3{
+  color: #FFF;
+  font-family: "Jamesphilip Light",Sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.elementor-icon-list-items{
+  align-content: center;
+  align-items: center;
+}
+
+.elementor-icon-list-item{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+}
+
+.elementor-icon-list-text{
+  font-family: 'Jamesphilip Light', sans-serif;
+  color: #FFF;
+  line-height: 1.6em;
+  letter-spacing: .7px;
+  font-size: 17px;
+  margin-left: 6rem;
+}
+
+.elementor-icon-list-items .elementor-icon-list-item .elementor-icon-list-text {
+  display: inline-block;
+}
+
+.icons{
+  font-family: 'Jamesphilip Bold', sans-serif;
+}
+
+.icons i{
+  font-size: 40px;
+}
+
+#icons2{
+  font-size: 25px;
+}
+
+.footer-body{
+  /* width: 100vh; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+}
+
+.footer-body .row{
+  width: 100%;
+}
+
+#logo-title_footer{
+  position: relative;
+  top: -6rem;
+  left: 8rem;
+  font-family: 'Poiret One', cursive;
+}
+
+.footer_credit{
+  margin-top: 0;
+  width: 100%;
+}
+
+
+#footer_links{
+  margin-top: 5rem;
+}
+
+#footer_links ul{
+  text-align: center;
+}
+
+#footer_links ul li{
+  list-style: none;
+  text-align: center;
+  color: #FFF !important;
+  font-family: 'Jamesphilip Bold', sans-serif !important;
+}
+
+#footer_links ul span{
+  font-size: 20px;
+  color: #FFFFFF61 !important;
+  font-family: 'Jamesphilip Bold', sans-serif !important;
+  font-weight: 400;
+}
+
+#footer_links ul li a{
+  color: #fff !important;
+  font-family: 'Jamesphilip Bold', sans-serif !important;
+  font-weight: 400  ;
+  padding-top: 1rem;
+  text-align: start;
+}
+
+#footer_links ul li a:hover{
+  color: #fff !important;
+}
+
+/* FOR MOBILE PHONE */
+@media screen and (max-width: 768px){
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white !important;
+    background-color: #121212;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+  .menu li a{
+    color: rgb(212, 212, 212) !important;
+    font-size: 13px;
+}
+  #icons{
+    display: none;
+  }                                 
+  #button{
+    width: 10rem;
+    font-size: 15px;
+  }
+  #button a{
+    font-size: 11px;
+  }
+  .text{
+    text-align: center;
+    top: 0;
+    margin-left: 0;
+  }
+  .text h1{
+    font-size: 3rem;
+    color: #231f4a !important;
+  }
+  .text h6{
+    margin: 0 1rem 0 1rem;
+    font-size: 13px;
+  }
+  .about{
+    display: none;
+  }
+  .home-image{
+    display: none;
+  }
+  .faq-title h2{
+    text-align: center;
+  }
+  .description{
+    text-align: center;
+    margin: 1rem;
+    left: 0;
+    right: 0;
+  }
+  .description h3{
+    font-size: 20px;
+  }
+  .description h1{
+    font-size: 38px;
+  }
+  .description h5{
+    font-size: 15px;
+  }
+  .description p{
+    font-size: 12px;
+    margin: 0 2rem !important;
+  }
+  .contact-image{
+    display: none;
+  }
+  .contact_info{
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .contact_info h1{
+    font-size: 38px;
+  }
+  .contact_info h3{
+    font-size: 18px;
+  }
+  .elementor-icon-list-item{
+    left: 0;
+  }
+  .elementor-icon-list-items{
+    left: 0;
+  }
+  .elementor-icon-list-text{
+    font-size: 14px;
+    text-align: center;
+    margin-left: 0rem;
+  }
+  .elementor-icon-list-items .elementor-icon-list-item .elementor-icon-list-text {
+    display: block;
+    text-align: center;
+  }
+  .row{
+    text-align: center;
+  }
+  #footer_links ul li{
+    text-align: center;
+  }
+  #logo-title_footer{
+    display: none;
+  }
+  #button{
+    font-size: 13px;
+  }
+  #img, #img2, #img3{
+    display: none;
+  }
+  .about-text{
+    text-align: center;
+    top: 0;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .about-text h1{
+    font-size: 3rem;
+  }
+  .about-text p{
+    font-size: 13px;
+  }
+  .faq-title h1{
+    font-size: 3rem;
+  }
+  .faq-title p{
+    margin: 0 2rem 0 2rem;
+    font-size: 13px;
+  }
+  .tc-title h1{
+    font-size: 3rem;
+  }
+  .tc-title p{
+    margin: 0 2rem 0 2rem;
+    font-size: 13px;
+  }
+  .contact-home{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-text{
+    width: 50%;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .contact-text h1{
+    font-size: 28px;
+  }
+  .contact-form{
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .contact-form .row{
+    margin: 1rem 2rem;
+  }
+  .contact-form h2{
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* For Tablet */
+@media screen and (min-width: 769px) and (max-width: 1668px){
+  #img{
+    display: none !important;
+  }
+  .about{
+    display: none;
+  }
+  .menu {
+    position: relative;
+    right: 0;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .text{
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+  .text h1{
+    font-size: 5rem;
+    top: 0;
+    left: 0;
+  }
+  .text h6{
+    font-size: 1rem;
+    margin: 0 1rem 0 1rem;
+  }
+  .description{
+    text-align: center;
+    margin: 1rem;
+    top: 70rem;
+    left: 0;
+    right: 0;
+  }
+  .description h3{
+    font-size: 20px;
+  }
+  .description h1{
+    font-size: 38px;
+  }
+  .description h5{
+    font-size: 15px;
+  }
+  .description p{
+    font-size: 13px;
+    text-align: justify;
+    margin: 1rem 2rem;
+  }
+  .contact-image{
+    display: none;
+  }
+  .contact_info{
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .home-image{
+    display: none;
+  }
+  .about-text{
+    text-align: center;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .about-text h1{
+    font-size: 3rem;
+  }
+  .about-text p{
+    margin: 0 1rem 0 1rem;
+    font-size: 13px;
+  }
+  .faq-title h1{
+    font-size: 3rem;
+  }
+  .faq-title p{
+    font-size: 13px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .tc-title h1{
+    font-size: 3rem;
+  }
+  .tc-title p{
+    font-size: 13px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .footer-body{
+    width: 100%;
+  }
+  .contact-home{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-text{
+    width: 50%;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .contact-form{
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .contact-form .row{
+    margin: 1rem 15rem;
+  }
+  .contact-form h2{
+    display: flex;
+    justify-content: center;
+  }
+}

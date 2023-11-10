@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: pop;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+#ul{
+    display: flex;
+    backdrop-filter: blurd(10px) !important;
+	box-shadow: 5px 10px 20px rgba(0,0,0,.3) !important;
+}
+ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul li .material-symbols-sharp{
+    font-size: 35px;
+    color: #57d8cd;
+    margin: 0 60px;
+}
+ul li .text{
+    font-size: 14px;
+    font-weight: 600;
+    color: #2fada2;
+}
+.rejected {
+    background-color: #ff0000 !important;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+.step-message {
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+}
+
+/* progres Div Css  */
+
+ul li .progres{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(68, 68, 68, 0.781);
+    margin: 14px 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.progres::after{
+    content: " ";
+    position: absolute;
+    width: 125px;
+    height: 5px;
+    background-color: rgba(68, 68, 68, 0.781);
+    right: 30px;
+}
+.one::after{
+    width: 0;
+    height: 0;
+}
+ul li .progres .uil{
+    display: none;
+    color: #fff;
+}
+ul li .progres p{
+    font-size: 13px;
+    padding-top: 5px;
+    color: #fff;
+}
+
+/* Active Css  */
+
+ul li .active{
+    background-color: #57d8cd;
+    display: grid;
+    place-items: center;
+}
+li .active::after{
+    background-color: #57d8cd;
+}
+ul li .active p{
+    display: none;
+}
+ul li .active .uil{
+    font-size: 20px;
+    display: flex;
+}
+
+/* Reject Css  */
+
+ul li .rejected{
+    background-color: rgb(153, 5, 5);
+    display: grid;
+    place-items: center;
+}
+li .rejected::after{
+    background-color: #57d8cd;
+}
+ul li .rejected p{
+    display: none;
+}
+ul li .rejected .uil{
+    font-size: 20px;
+    display: flex;
+}
+
+
+
+
+/* Responsive Css  */
+@media (max-width: 980px) {
+    ul{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    ul li{
+        flex-direction: row;
+    }
+    ul li .progres{
+        margin: 0 30px;
+    }
+    .progres::after{
+        width: 5px;
+        height: 55px;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    .one::after{
+        height: 0;
+    }
+    ul li .icon{
+        margin: 15px 0;
+    }
+    
+}
+
+

@@ -1,0 +1,297 @@
+@font-face{
+    font-family: 'Cera-Light';
+    src: url(../fonts/CeraRoundProDEMO-Light.otf);
+}
+@font-face {
+    font-family: 'Jamesphilip Light';
+    src: url('../fonts/Sailec-Light/Sailec\ Light.ttf');
+  }
+  @font-face {
+    font-family: 'Jamesphilip Bold';
+    src: url('../fonts/Fonts/sofiapro-light.otf');
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{ 
+    background-image: linear-gradient(to right, #fff,  #fff, #fff);
+    height: 100vh;
+}
+
+.rows{
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.homepageSearch{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url('../../img/pexels-vlada-karpovich-4050320.jpg');
+   
+}
+
+.pic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65vh;
+    /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.3) 100%), url("../../img/pexels-photo-8297621.webp") !important; */
+   
+}
+
+
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    15% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    15% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+
+.home-search{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* For Search Button */
+.search-title{
+    padding: 1rem 2.4rem;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+
+.search-title h1{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 800; 
+    text-align: center;
+    color: #fff !important;
+}
+
+.search-title p{
+    color: #fff !important; 
+    
+}
+
+.search-form{
+    width: 50%;
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+
+#search{
+    width: 50vw; 
+    background: rgba(255,255,255);
+    color: #000 !important;
+    border: 1px solid #fff;
+    border-right: none;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    border-start-start-radius: 30px;
+    border-end-start-radius: 30px;
+    padding: 1rem 3.8rem;
+    font-family: 'Raleway', sans-serif;
+    outline: #2fada2;
+    display: flex;
+    justify-content: flex-start;
+}
+  
+::placeholder{
+    text-transform: none;
+}
+  
+#searchbtn{
+    background: rgba(255,255,255,.5);
+    color: #000;
+    border: 1px solid #fff;
+    border-left: 1px solid rgb(194, 192, 192);
+    padding:  1rem 2.4rem;
+    font-family: 'Poppins', sans-serif;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    font-weight: 300;
+    transition: .4s ease-in-out;
+    position: absolute;
+    right: 0;
+    box-shadow: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover,
+.form-control:-webkit-autofill:focus,
+.form-control:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #000 !important;
+}
+
+#email2:-webkit-autofill,
+#email2:-moz-autofill,
+#email2:-ms-autofill,
+#email2:-o-autofill {
+  background-color: #ffa; /* Change the color of the autofill background */
+}
+
+/* Card */
+
+.card{
+    width: 100% !important; 
+    background: #ffff!important;
+    margin-top: 2rem !important;
+    justify-content: left;
+    padding: 1rem;
+    backdrop-filter: blurd(10px) !important;
+	box-shadow: 5px 10px 20px rgba(0,0,0,.3) !important;
+    /* box-shadow: 0 5px 25px rgb(1 1 1 / 20%); */
+}
+
+.card:hover{
+    border-bottom: 2px solid #2fada2 !important;
+    transition: .2s ease-out;
+}
+
+.card-body{
+    background-color: #fff !important;
+    text-align: left;
+}
+
+.card-title{
+    color: #2fada2;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'Jamesphilip Bold', sans-serif;
+    text-align: left;
+}
+
+.page-link{
+    color: #2fada2 !important;
+    box-shadow: none !important;
+}
+
+.page-link:hover{
+    background: #2fada2 !important;
+    border: 1px solid #2fada2 !important;
+    color: white !important;
+}
+
+.block h5{
+    display: flex !important;
+    flex-direction: column;
+}
+
+/* For Smart Phone View */
+@media screen and (max-width: 768px){
+    #icons{
+      display: none;
+    }
+    .search-form{
+        margin: 0 3rem !important;
+    }
+    #search{
+        padding: .8rem 2.4rem;
+        font-size: 13px;
+    }
+      
+    #searchbtn{
+        padding: .8rem 2.4rem;
+        font-size: 13px;
+    }
+    .fa-solid{
+        margin-left: 1rem;
+    }
+    .material-symbols-sharp{
+        left: 0 !important;
+        padding-left: .5rem;
+    }
+    #search{
+        border-radius: 30px;
+
+    }
+    #searchbtn{
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 30px;
+        margin-top: 1rem;
+        background: #2fada2;
+        color: #fff !important;
+        opacity: 100%;
+        border: none;
+    }
+}
+
+/* For Tablet View */
+
+@media screen and (min-width: 769px) and (max-width: 1023px){
+    .menu {
+        position: absolute;
+        left: 0;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .row{
+        justify-content: center;
+    }
+    #left{
+        text-align: left;
+    }
+    #search{
+        margin-left: 0;
+    }
+    .fa-solid{
+        margin-left: 1rem;
+    }
+}

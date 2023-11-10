@@ -1,0 +1,65 @@
+@font-face{
+    font-family: 'Cera-Light';
+    src: url(../fonts/CeraRoundProDEMO-Light.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Roboto', sans-serif !important;
+    
+}
+
+html, body{
+    background-image: linear-gradient(to right, #fff,  #fff, #fff) !important;
+    height: 100vh;
+}
+
+.logo{
+    color: white;
+    background: inherit;
+    text-decoration: none;
+    width: 30%;
+    font-size: 27px;
+}
+
+.form-control{
+    background: none !important; 
+    box-shadow: none !important;
+    outline: none !important;
+    color: #000 !important;
+}           
+
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover,
+.form-control:-webkit-autofill:focus,
+.form-control:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #000 !important;
+}
+
+#row{
+    justify-content: left !important;
+}
+
+#bg{
+    justify-content: left !important;
+    position: absolute;
+    left: 0;
+    top: 0 !important;
+}
+
+a:hover{
+    color: red !important;
+}
+
+/* For Mobile Phone */ 
+@media screen and (max-width: 767px) { 
+    #bg{
+        display: none;
+    }
+}
+
+
+ 
